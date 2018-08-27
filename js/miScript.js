@@ -7,12 +7,12 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var link = document.getElementById("link").href;
 
-    img.onclick= function(){
+    $(".image").click(function(){ //Con esto seleccionas todos los elementos que tengan la clase ".image"
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = '<div id="caption"><a id="link" href='+link+' style ="text-align:center">View</a>  </div> ' + this.alt;
     
-    }
+    })
 
 captionText = document.getElementById("caption");
 
